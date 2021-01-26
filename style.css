@@ -1,0 +1,38 @@
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	background-color: #111; 
+}
+
+nav {
+	list-style-type: none;
+	overflow: hidden;
+	background-color: #111;
+}
+
+li {
+	float:left;
+}
+
+.grid_container {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	padding: 10px;
+}
+
+.grid-item {
+	padding: 20px;
+	text-align: left;
+}
+
+table, th, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+th, td {
+	padding: 10px;
+}
