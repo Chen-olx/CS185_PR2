@@ -3,22 +3,34 @@
 <head>
 	<title>Image</title>
 	<link rel = "stylesheet" href = "style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 	<nav>
 		<li><a href = "index.html">Text</a></li>
-		<li><a href = "image.html">Image</a></li>
+		<li><a href = "image.html" id="highlight">Image</a></li>
 		<li><a href = "video.html">Video</a></li>
 		<li><a href = "table.html">Table</a></li>
+		<li><a href = "email.html">Email</a></li>
 	</nav>
 	<br>
 	<div class="grid_container">
-		<div class="grid-item"><img src="1.jpeg" alt="HongKong" width="326" height="244"></div>
-		<div class="grid-item"><img src="2.jpeg" alt="Hawaii" width="320" height="240"></div>
-		<div class="grid-item"><img src="3.jpeg" alt="fish" width="320" height="240"></div>
-		<div class="grid-item"><img src="4.jpeg" alt="ski" width="240" height="320"></div>
-		<div class="grid-item"><img src="5.jpeg" alt="snow" width="320" height="240"></div>
-		<div class="grid-item"><img src="6.jpeg" alt="snow" width="320" height="240"></div>
+		<div class="grid-item"><img onclick="on(this)" src="1.jpeg" alt="HongKong"></div>
+		<div class="grid-item"><img onclick="on(this)" src="2.jpeg" alt="Hawaii"></div>
+		<div class="grid-item"><img onclick="on(this)" src="3.jpeg" alt="fish"></div>
+		<div class="grid-item"><img onclick="on(this)" src="4.jpeg" alt="ski"></div>
+		<div class="grid-item"><img onclick="on(this)" src="5.jpeg" alt="snow"></div>
+		<div class="grid-item"><img onclick="on(this)" src="6.jpeg" alt="snow"></div>
+		<div class="grid-item"><img onclick="on(this)" src="7.jpeg" alt="cat1"></div>
+		<div class="grid-item"><img onclick="on(this)" src="8.jpeg" alt="cat2"></div>
+		<div class="grid-item"><img onclick="on(this)" src="9.jpeg" alt="cat3"></div>
+		<div class="grid-item"><img onclick="on(this)" src="10.jpeg" alt="street"></div>
+		<div class="grid-item"><img onclick="on(this)" src="11.jpeg" alt="seafood"></div>
+		<div class="grid-item"><img onclick="on(this)" src="12.jpeg" alt="bbq"></div>
+		<div class="grid-item"><img onclick="on(this)" src="13.jpeg" alt="sky"></div>
 	</div>
+	<button onclick="scrolltotop()" id="topbutton" title="Back to top">Back to top</button>
+	<div class="overlay" id="overlay" ><img class="obj" id="obj"></div>
+	<script src="script.js" ></script>
 </body>
 </html>
