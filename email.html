@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Email</title>
+	<link rel = "stylesheet" href = "style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<nav>
+		<li><a href = "index.html">Text</a></li>
+		<li><a href = "image.html">Image</a></li>
+		<li><a href = "video.html">Video</a></li>
+		<li><a href = "table.html">Table</a></li>
+		<li><a href = "email.html" id="highlight">Email</a></li>
+	</nav>
+	<br>
+	<form name="form1">
+		<label for = "email">Email address:</label><br>
+		<input type="text" name="email" id="email"><br>
+		<p id="feedback"></p>
+		<button type='button' onclick="emailvalidation()">Submit</button>
+	</form>
+	<br>
+	<button onclick="scrolltotop()" id="topbutton" title="Back to top">Back to top</button>
+	<script src="script.js" ></script>
+</body>
+</html>

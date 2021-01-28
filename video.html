@@ -3,20 +3,29 @@
 <head>
 	<title>Video</title>
 	<link rel = "stylesheet" href = "style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 	<nav>
 		<li><a href = "index.html">Text</a></li>
 		<li><a href = "image.html">Image</a></li>
-		<li><a href = "video.html">Video</a></li>
+		<li><a href = "video.html" id="highlight">Video</a></li>
 		<li><a href = "table.html">Table</a></li>
+		<li><a href = "email.html">Email</a></li>
 	</nav>
 	<br>
 	<div class="grid_container">
-		<div class="grid-item"><iframe src="https://www.youtube.com/embed/pQN-pnXPaVg"></iframe></div>
-		<div class="grid-item"><iframe src="https://www.youtube.com/embed/pkKu9hLT-t8"></iframe></div>
-		<div class="grid-item"><iframe src="https://www.youtube.com/embed/nM0xDI5R50E"></iframe></div>
+		<div class="grid-item"><video onclick="on(this)" src="video/1.mp4" autoplay></video></div>
+		<div class="grid-item"><video onclick="on(this)" src="video/2.mp4" autoplay></video></div>
+		<div class="grid-item"><video onclick="on(this)" src="video/3.mp4" autoplay></video></div>
+		<div class="grid-item"><video onclick="on(this)" src="video/4.mp4" autoplay></video></div>
+		<div class="grid-item"><video onclick="on(this)" src="video/5.mp4" autoplay></video></div>
+		<div class="grid-item"><video onclick="on(this)" src="video/6.mp4" autoplay></video></div>
+		<div class="grid-item"><video onclick="on(this)" src="video/7.mp4" autoplay></video></div>
+		<div class="grid-item"><video onclick="on(this)" src="video/8.mp4" autoplay></video></div>
 	</div>
-
+	<button onclick="scrolltotop()" id="topbutton" title="Back to top">Back to top</button>
+	<div class="overlay" id="overlay" ><video class="obj" id="obj" controls></div>
+	<script src="script.js" ></script>
 </body>
 </html>
